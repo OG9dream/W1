@@ -1,0 +1,9 @@
+student={"name":"小明","score":"95","age":"18"}
+print("姓名",student["name"])
+print("成绩",student["score"])
+student["score"]=100
+student["city"]="北京"
+print("改完以后",student)
+print("有几个键",len(student))
+print("所有键",student.keys())
+print("所有值",student.values())
