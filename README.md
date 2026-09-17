@@ -18,3 +18,19 @@
 
 ## 运行方式
     python3 文件名.py
+
+## 第 4 周:函数与模块
+- `func1.py` — 函数入门(def 定义 / 调用)
+- `func2.py` — 参数(形参 parameter / 实参 argument)
+- `func3.py` — 返回值 return(与 print 的本质区别)
+- `func4.py` — 默认参数 / 关键字参数
+- `modules.py` — import 标准库(math / time / random)
+- `mytools.py` — 自己写的工具箱模块
+- `main.py` — 引入自定义模块
+- `try1.py` — 异常处理 try / except
+- `manager_v1.py` — 第 3 周过程式版本(对照用)
+- `manager2.py` — 第 4 周函数版成绩管理脚本
+
+## 刷题记录(LeetCode / 力扣)
+- 1. 两数之和(Two Sum)—— 双重循环暴力法 ✅
+- 9. 回文数(Palindrome Number)—— 字符串翻转 `[::-1]` ✅
