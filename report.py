@@ -21,7 +21,7 @@ total = sum(scores)
 print("----- 统计 -----")
 print("人数:", len(students))
 print("总分:", total)
-print("平均分:", total / len(students))
+print("平均分:", round(total / len(students)), 2)
 print("最高分:", max(scores))
 print("最低分:", min(scores))
 
