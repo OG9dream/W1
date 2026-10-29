@@ -47,4 +47,21 @@
 - `log2.py` —— 统计各级别条数(字典计数)
 - `file5.py` / `file6.py` —— 正则练习
 - **`log_report.py`** —— 交付物:日志分析报告(总行数 / 各级别 / 日期 / 错误明细)
-## 第 7 周:Git 与网络(进行中)
+## 第 7 周:Git 与网络
+
+**主题**:Git 分支 / 合并 / PR;`requests` 抓取真实网络数据
+
+**学到的**:
+- 分支:`git switch -c` 开平行世界,`git switch` 来回切;未提交的改动会"跟着走"
+- 合并与冲突:`git merge`;冲突标记 `<<<<<<<` / `=======` / `>>>>>>>`;解决三步 = 改文件(删标记)→ `git add` → `git commit`
+- PR:**推分支** `git push -u origin 分支名` → 网页开 PR → 看 diff → 合并 → `git pull` 拉回本地
+- `requests`:`requests.get(url, timeout=10)`、`r.status_code`、`r.text`、`r.json()`
+- 状态码:**200 成功 / 404 找不到 / 403 没权限 / 5xx 是服务器错**
+- 从 JSON 取数:`dict` 用 `[]`(必有)或 `.get()`(可选);`list` 用 `for` 循环;嵌套一层层剥
+- 异常兜底:`try / except requests.exceptions.RequestException`;**先判状态码,再取字段**
+- 抓取结果存盘:`data.json` —— 省配额、更快、可复用
+
+**产出**:
+- `net1.py` ~ `net5.py` —— 连通性实测 / 第一个请求 / 状态码 / `.json()` 解析 / 取字段
+- **`fetch.py` —— 小型数据抓取脚本**:抓 GitHub 用户与仓库清单,打印报告并保存 `data.json`,带断网 / 404 兜底
+- 一次完整的分支 + PR 流程
